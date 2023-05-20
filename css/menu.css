@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+
+header *, footer * {font-family: "NotoSansCJK"; color: #141414;font-weight: 400;}
+
+header {position: fixed; top:0px; left:0; z-index:999; width:100%;}
+
+#wrap {padding-top:64px; min-height:300px;}
+header .top {display: flex;align-self: center;justify-content: space-between; height: 64px;padding: 0 20px 0 24px; background-color: #fafafa;}
+header .top .logo { display: inline-flex; width: 98px; align-self: center;margin-top:5px;}
+header .top .logo p{font-size: 14px;line-height: 1.5;font-weight: 500;color: #141414;white-space: nowrap;}
+header .top .logo img { width: 100%;height: 34%;align-self: center;min-width:60px;max-height:19px}
+header .top .menu-btn {display: flex;align-self: center;justify-content: space-between;font-family:'Arial' !important; }
+header .top .menu-btn button {margin-left: 24px; padding: 10px 0; font-size: 14px;color: #141414;background:transparent;border:0px;}
+header .top .menu-btn button:hover {border-bottom: 1px solid;}
+
+header .top .menu-btn button:active {border-bottom: 0px;}
+header .top .total_menu button:active {border: none;}
+header .top .menu-btn .Our_Cars {font-weight: 500;}
+
+header .our-con { display: none;cursor: pointer;overflow: hidden; position: fixed; top: 64px; left: 0; width: 100%; height: calc(100vh - 65px); z-index: 9;}
+header .our-con .bg02 {position: fixed; top: 65px; left: 0; width: 100%; overflow: hidden; height: 100%; opacity: 0; transition: opacity 0.3s linear; background-color: rgba(0, 0, 0, 0.75); z-index: -1;}
+header .our-con.on .bg02 {opacity: 1;}
+header .our-con nav {width: 100%; height: 92%;  cursor:default; padding-top: 24px; background-color: #fff;overflow-y: scroll; z-index: 2; }
+header .our-con nav .wrap-con {width: 100%;max-width: 1400px; height: 100%; padding: 0; margin: auto;display: flex; justify-content: left;}
+header .our-con nav .left {  border-right: 1px solid #ebebeb;width: 23%; max-width: 205px;}
+header .our-con nav .left > ul { text-align: left;display: inline-block;padding: 10px 30px 10px 30px; }
+header .our-con nav .left > ul p {line-height: 1.4;font-size: 20px;font-weight: 500;color: rgb(112, 112, 112);transition:color .3s; word-break: keep-all; letter-spacing:0;}
+header .our-con nav .left > ul li {cursor: pointer; opacity: 0; transition: .3s; transform: translateY(-50px);}
+header .our-con nav .left > ul span {display: block; margin-bottom: 40px;font-size: 12px; letter-spacing: 0.02em;line-height: 1.66667;color: rgb(112, 112, 112);word-break: keep-all;font-weight: 300;transition:color .3s;}
+
+header .our-con nav{ -ms-overflow-style: none; } header .our-con nav::-webkit-scrollbar{ display:none; }
+
+header .our-con nav .left ul li.on p,
+header .our-con nav .left ul li.on span {color: #141414; }
+
+header .our-con.on nav .right  div.con-wrap{height: auto; opacity: 1; transform: translate(0);}
+header .our-con.on nav .left > ul li{height: auto; opacity: 1; transform: translate(0);}
+
+header .our-con nav .right {  width: 100%; max-width: 960px;padding: 10px 20px 10px 75px;  transition: 0.3s;}
+header .our-con nav .right > div { width: 100%; display:none;}
+header .our-con nav .right > div.on {display: block;}
+header .our-con nav .right div.con-wrap {opacity: 0; transition: .3s; transform: translateY(-50px);}
+header .our-con nav .right div.con-wrap > a {display: block; color: rgb(28, 107, 186);padding: 12px 25px 12px; line-height: 22px; font-size: 14px;font-weight: 500;}
+header .our-con nav .right div.con-wrap > a svg {margin-left: 8px; stroke: rgb(28, 107, 186);}
+header .our-con nav .right div.con-wrap > a:hover, 
+header .our-con nav .right div.con-wrap > a:hover svg {color: black; stroke: black;}
+
+header .our-con nav .right div.con-wrap > a.noevent {color:#707070; pointer-events:none;}
+
+header .our-con nav .right div.con-wrap .cars {flex-wrap: wrap;  display: grid;column-gap: 16px; grid-template-columns: repeat(auto-fit, minmax(max-content, 180px));}
+header .our-con nav .right div.con-wrap .cars div {width: 210px; padding: 16px 25px 16px; text-align: left; padding-right: 20px; transition: .2s; }
+header .our-con nav .right div.con-wrap .cars div:hover {background-color: #fafafa;}
+header .our-con nav .right div.con-wrap .cars div p {line-height: 1.5;font-size: 16px;font-weight: 500;}
+header .our-con nav .right div.con-wrap .cars div span {display: block; letter-spacing: 0.02em;line-height: 1.66667;font-size: 12px;font-weight: 200;color: #707070;}
+header .our-con nav .right div.con-wrap .cars div img { margin-top: 15px; height: 56px;}
+header .our-con nav .right div.con-wrap .cars div .counsel-btn {display: inline-block; margin-top: 24px; width: auto; padding: 2px 12px;letter-spacing: 0.02em; border-radius: 4px;  color: #141414;    white-space: nowrap;  padding: 2px 12px;  font-weight: 500;  line-height: 1.66667;font-size: 12px;border: 1px solid rgb(213, 213, 213);background-color: rgb(250, 250, 250);}
+
+header .our-con .close-btn {position: absolute;display: flex;justify-content: center;align-items: center; width: 40px;height: 40px; top: 10px; right: 12px; padding: 5px;}
+header .our-con .close-btn svg {stroke: black; width: 24px; cursor: pointer;}
+
+.min-show {display: none;}
+header .ham-con {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh;z-index: 999; }
+header .ham-con .bg {width: 100%; height: 100%; background-color: #141414; opacity: 0; transition: 0.3s linear; cursor: pointer; }
+header .ham-con.on .bg { opacity: 0.8;}
+header .ham-con .container-box {position: fixed; top: 0; right: -500px; width: 400px; height: 100%; background-color: #fff; transition: .3s; overflow: hidden;}
+header .ham-con.on .container-box { right: 0; }
+header .ham-con .container-box .wrap {width: 300%; height: calc(100vh - 68px); margin-top: 68px; display: flex;}
+header .ham-con .container-box .wrap > div {width: calc(100%/3); height: 100%;}
+
+.ham-close-btn {padding: 5px; transition: .3s;}
+.ham-close-btn:hover,
+header .ham-con .container-box > .top .back:hover,
+header .our-con .close-btn:hover { background-color: #ebebeb; border-radius: 100px;}
+
+/* header .ham-con .menu {margin-top: 70px;} */
+
+header .ham-con .container-box >  .top { position: fixed; width: 400px; padding: 0 12px 0 24px; border-bottom: 1px solid #ebebeb; background-color: #fff;}
+header .ham-con .container-box >  .top div {display: flex; width: 100%; align-items: center; justify-content: space-between; background-color: transparent; cursor: pointer;}
+header .ham-con .container-box > .top  svg {width: 18px; height: 25px; stroke: #fafafa;margin-top:3px;}
+header .ham-con .container-box > .top .back { display: none; width: 40px; height: 40px;}
+header .ham-con .container-box > .top .back svg {transform: rotate(90deg);}
+header .ham-con .container-box > .top .txt-cg { display: none; font-size: 14px; line-height: 1.5;font-weight: 500;color: #141414;text-align: center;}
+header .ham-con .container-box > .top.on {position: fixed; width: 400px; height: 65px;  z-index: 99; padding: 0 10px ;}
+header .ham-con .container-box > .top.on .back,
+header .ham-con .container-box > .top.on .txt-cg {display: inline-block !important;background: transparent;border:0px;margin:0px;}
+header .ham-con .container-box > .top.on .logo {display: none;}
+header .ham-con .container-box .wrap .menu03 {overflow-y: scroll;}
+/* header .ham-con .container-box .wrap .menu03{ -ms-overflow-style: none; } header .ham-con .container-box .wrap .menu03::-webkit-scrollbar{ display:none; } */
+
+#logo_img{
+    width:100%;min-width:20px !important;margin-right:4px;margin-bottom:4px;cursor:pointer;
+}
+
+#lgt{
+    margin:0px;cursor:pointer;
+}
+
+header .ham-con .menu .middle {}
+header .ham-con .menu .middle ul {}
+header .ham-con .menu .middle ul li { padding: 10px 25px 10px 25px; display: flex; align-items: center; justify-content: space-between; cursor: pointer;}
+header .ham-con .menu .middle ul li p,
+header .ham-con .menu .middle ul li a {display: block;width: 100%;font-size: 15px; line-height: 80%;font-weight: 400;}
+header .ham-con .menu .middle ul li:hover {background-color: #fafafa;}
+.pad {padding-top: 0px;}
+.pad-top {padding: 12px 25px 10px !important;}
+.hidden-txt {color: transparent !important;}
+
+header .ham-con .menu .bottom > ul {margin: 15px 0px 0px ;}
+header .ham-con .menu .bottom li {display: flex; align-items: center; justify-content: space-between;padding: 15px 0px; margin: 0 25px 0 25px;  border-top: 1px solid #ebebeb;border-bottom: 1px solid #ebebeb; }
+header .ham-con .menu .bottom ul:hover {background-color: #fafafa;}
+header .ham-con .menu .bottom > ul p {display: inline-block; flex-grow: 1; text-align: left;line-height: 1.5714;font-size: 14px;font-weight: 300;color: #707070; cursor: pointer;}
+header .ham-con .menu .bottom div:last-of-type {padding: 0 25px;}
+header .ham-con .menu .bottom div svg {width: 25px; margin: 35px 30px 0 0;cursor: pointer;}
+
+header .ham-con .container-box .menu02,
+header .ham-con .container-box .menu03 {padding: 0 0 30px !important;}
+header .ham-con .container-box .menu02 > div,
+header .ham-con .container-box .menu03 > div {display: none;}
+header .ham-con .container-box .menu02 > div:first-of-type,
+header .ham-con .container-box .menu03 > div:first-of-type {display: block;}
+
+
+header .ham-con .set-con > p {padding: 30px 25px 10px; letter-spacing: 0.02em; line-height: 1.66667;font-size: 12px;font-weight: 500;color: #707070; }
+header .ham-con .set-con > ul.top { border: none; display: block; padding: 0; height: auto; background-color: #fff;}
+header .ham-con .set-con > ul.top li {padding: 10px 25px; background-color: #fff; cursor: pointer;}
+header .ham-con .set-con > ul.top li a {display: block; width: 100%;  line-height: 1.4; font-size: 20px; font-weight: 400; color: #141414;}
+header .ham-con .set-con > ul.bottom li { padding: 10px 25px; cursor: pointer;}
+header .ham-con .set-con > ul.bottom li a {width: 100%;  line-height: 1.4; font-size: 14px; font-weight: 400; color: #141414; }
+header .ham-con .set-con > ul li:hover { background-color: #fafafa;   }
+header .ham-con .set-con > ul li { display: flex; justify-content: space-between; align-items: center; }
+
+.min-show .car-box { margin: 0 25px 0 25px; border-bottom: 1px solid #ebebeb;}
+.min-show .title {padding: 10px 0px 20px; display: flex; align-items: center; justify-content: space-between;}
+.min-show .title.on img { transform: rotate(180deg);}
+.min-show .title p {font-weight: 500;font-size: 16px;line-height: 1.666;color: #141414; letter-spacing:0;}
+.min-show .title span {font-weight: 300; font-size: 16px; color: #707070;}
+.min-show .title img {transform: rotate(0deg); transition: .3s;}
+
+.min-con {display: none;padding-bottom: 40px;}
+.min-con.on {}
+.min-show .con-wrap .car-con { display: flex; align-items: center; justify-content: space-between;}
+.min-show .con-wrap .cars > div { padding: 12px 0;}
+.min-show .con-wrap > a {display: block; padding: 12px 0; font-size: 14px;letter-spacing: 0.02em; line-height: 22px; font-weight: 500; color: rgb(28, 107, 186);}
+.min-show .con-wrap > a.noevent {color:#707070; pointer-events:none;}
+.min-show .con-wrap svg {margin-left: 5px; stroke: rgb(28, 107, 186);}
+.min-show .con-wrap .cars .car-con div {height: 100%;}
+.min-show .con-wrap .cars .car-con div p {font-size: 16px; font-weight: 500;line-height: 1.5;color: #141414;}
+.min-show .con-wrap .cars .car-con div span {font-size: 12px;font-weight: 300;line-height: 1.5; color: #707070;letter-spacing: 0.02em;}
+.min-show .con-wrap .cars .car-con img {height: 46px;}
+.min-show .con-wrap .cars .counsel-btn {display: inline-block; margin-top: 12px; width: auto; padding: 2px 12px;letter-spacing: 0.02em; border-radius: 4px;  color: #141414;    white-space: nowrap;  padding: 2px 12px;  font-weight: 500;  line-height: 1.66667;font-size: 12px;border: 1px solid rgb(213, 213, 213);background-color: rgb(250, 250, 250);}
+
+
+@media (max-width:1200px) {
+    header .our-con nav .right {padding: 10px 20px 10px 2.5%;}
+}
+@media (max-width:1100px) {
+    header .our-con nav .right {padding: 10px 20px 10px 0%;}
+}
+@media (max-width:1000px) {
+    header .our-con nav .right {padding: 10px 20px 10px 5%;}
+    header .our-con nav .left {width: 36%;}
+}
+@media (max-width:700px) {
+    header .our-con nav .right {padding: 10px 20px 10px 0%; }
+
+}
+@media (max-height:750px) { header .ham-con .container-box .wrap > div{ overflow-y: scroll; padding-bottom: 30px;}}
+
+@media (max-width:480px) {
+    header .ham-con .container-box .wrap {height: calc(100vh - 48px); margin-top: 48px; }
+    header .ham-con .container-box .wrap > div {overflow-y: scroll; padding-bottom: 40px;}
+    header .ham-con .container-box > .top {padding: 0 20px 0 24px;}
+    header .top {height: 48px; position: fixed;width: 100% !important;}
+    header .ham-con .set-con > ul.top {position: relative;}
+    header .ham-con .container-box > .top.on {height: 48px;}
+    header .ham-con .container-box {max-width: 100%;width: 100% !important;}
+ 
+	 header .top .logo {width:86px;}
+
+	 	 #wrap {padding-top:48px;}
+
+    header .our-con {display: none !important;}
+    .min-show {display: block;}
+    .Our_Cars {display: none;}
+/* 
+    header .ham-con .menu .middle ul li { padding: 10px 42px 10px 25px;}
+    header .ham-con .menu .bottom li {margin: 0 42px 0 25px; }
+
+    header .ham-con .menu .min-show .car-box.on,
+    header .ham-con .menu .bottom li.on  {margin-right: 25px !important;}
+    header .ham-con .menu .middle ul li.on {padding-right: 25px !important;} */
+
+    
+    
+
+}
+
+
+
+
+
+
+footer {padding: 14px 24px 14px;background-color: #131313;text-align: center;width: 100%;}
+/* footer > div {width: 100%; overflow: hidden;} */
+footer a {display: inline-block; margin: 0 5px; font-size: 10px; font-weight: 300;color: #fafafa; letter-spacing: 0.02em; word-break: keep-all;}
+/* footer a:hover {color: #1c6bba;} */
+footer span {display: inline-block; margin: 0 5px; font-size: 10px; font-weight: 300;color: #fafafa; letter-spacing: 0.02em; word-break: keep-all;}
+
+
+
+.footer_title { padding: 95px 20px 50px; text-align: center;}
+.footer_title strong {  display: block;  margin-bottom: 10px; font: 26px/32px "Volvo Novum Light","Arial Narrow","Helvetica Neue",Arial,sans-serif!important; color: #161618;letter-spacing: .025em;}
+.footer_title span { display: inline-block; width: 100%; max-width: 520px; font-weight: 200; font: 15px/22px "Volvo Novum Light","Arial Narrow","Helvetica Neue",Arial,sans-serif; color: #333;}
+
+.fot-btn {display: flex; align-items: center;}
+.fot-btn > div {width: calc(100%/3);}
+.fot-btn > div a { position: relative; display: block; width: 100%; height: 100%;}
+.fot-btn > div a img { width: 100%; height: 100%; object-fit: cover; }
+.fot-btn > div a::after {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);transition: background-color .5s ease-out; }
+.fot-btn > div a span {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; text-align: center; display: inline-block; z-index: 5; font-size: 26px; font-family: "Volvo Novum Light","Arial Narrow","Helvetica Neue",Arial,sans-serif; color: #fff;}
+.fot-btn > div a:hover::after { background-color: rgba(0, 0, 0, 0.8);}
+
+
+@media (max-width:700px) {
+	.fot-btn {flex-wrap: wrap;}
+	.fot-btn > div {width: 100%;}
+}
