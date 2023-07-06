@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <!-- Google Tag Manager -->
+
+       <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -30,11 +31,11 @@
   gtag('config', 'AW-11061217748');
 </script>
 
-
-<!-- Event snippet for 손해평가사 - 페이지 조회 conversion page -->
+<!-- Event snippet for 자격증 신청 conversion page -->
 <script>
-    gtag('event', 'conversion', {'send_to': 'AW-11061217748/XkxICLjojpoYENSTs5op'});
+    gtag('event', 'conversion', {'send_to': 'AW-11061217748/II0fCK-30LcYENSTs5op'});
   </script>
+  
   
 <!-- Meta Pixel Code -->
 <script>
@@ -54,31 +55,25 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-     <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '165728722980193');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=165728722980193&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
 
 
     <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
     <script type="text/javascript">
-          kakaoPixel('6307477379012840322').pageView();
+      kakaoPixel('6307477379012840322').pageView();
+      kakaoPixel('6307477379012840322').purchase('purchase');
+      kakaoPixel('6307477379012840322').purchase({
+        total_quantity: "1", // 주문 내 상품 개수(optional)
+        total_price: "6000",  // 주문 총 가격(optional)
+        currency: "KRW",     // 주문 가격의 화폐 단위(optional, 기본 값은 KRW)
+        products: [          // 주문 내 상품 정보(optional)
+            { id: "license", name: "메타", quantity: "1", price: "6000"},
+         
+        ],
+        tag: 'purchase'
+    });
     </script>
 
-    <title>국가 자격증 취득 지원 센터</title>
+    <title>신청이 완료되었습니다 - 자격증 취득 지원 센터</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,11 +92,7 @@
         href="./css/bootstrap.min.css">
    
  
-    <!-- Latest compiled JavaScript -->
-    <!-- <script
-        src="./js/bootstrap.min.js"></script> -->
-    <!-- CSS File -->
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+   
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -126,7 +117,7 @@
            
             <div class="title" style="margin-bottom:40px;">
                 <br><br>
-                <a href="#sec05" class="scroll box">
+                <a href="#sec05" class="scroll box" style="display:none;">
                     
                     <span class="timer">
                         접수마감 | <script language="javascript" type="text/javascript">
@@ -135,28 +126,30 @@
                         </script> ( <span id="countdown"></span>)
                     </span>
                 </a> <br><br>
-                <img src="./img/edu.png" style="width:60px;margin:20px;">
-                <p class="top wow fadeInUp">한국교육개발센터<br>취업 준비 특별 지원</p><br>
-                <h1 class="wow fadeInUp">국가자격증<br>손해평가사<br>취득 지원 센터</h1>
+                <!-- <img src="./img/gov.png" style="width:150px"> -->
+                <p class="top wow fadeInUp">신청이 완료되었습니다.<br></p><br>
+                <h1 class="wow fadeInUp">최대한 빠르게<br>전화로 안내드리겠습니다.<br><br></h1>
+                <p class="top wow fadeInUp">함께 신청하면 도움되는<br>국가자격증 취득 지원 혜택<br>살펴보기</p>
             </div>
 
             <div id="menu" style="width:100%;">
-                <span class="menu_list active mn1" onclick="window.location.href='./kl-a.html'" >손해평가사</span>
+                <span class="menu_list mn1" onclick="window.location.href='./kl-a.html'" >손해평가사</span>
                 <span  class="menu_list mn2" onclick="window.location.href='./kl-b.html'">도로교통사고감정사</span>
                 <!-- <span class="menu_list  mn3" onclick="window.location.href='./kl-c.html'">농산물품질관리사</span> -->
                 <span  class="menu_list mn4" onclick="window.location.href='./kl-d.html'">반려견스타일리스트</span>
-                <span  class="menu_list mn5" onclick="window.location.href='./kl-e.html'">화장품제조관리사</span>
+                <span  class="menu_list mn5" onclick="window.location.href='./kl-e.html'">맞춤형화장품제조관리사</span>
                 
                 <br><br><br>
             </div>
 
             <div id="m-menu" style="width:100%;">
-                <span class="menu_list active mn1" onclick="window.location.href='./kl-a.html'">손해평가사</span>
+                <span class="menu_list mn1" onclick="window.location.href='./kl-a.html'">손해평가사</span>
                 <!-- <span class="menu_list mn3" onclick="window.location.href='./kl-c.html'">농산물품질관리사</span> -->
                 <span  class="menu_list mn2" onclick="window.location.href='./kl-b.html'">도로교통사고감정사</span>
                 <br>
-                <span  class="menu_list mn4" onclick="window.location.href='./kl-d.html'">반려견스타일리스트</span>
                 <span  class="menu_list mn5" onclick="window.location.href='./kl-e.html'">화장품제조관리사</span>
+                <span  class="menu_list mn4" onclick="window.location.href='./kl-d.html'">반려견스타일리스트</span>
+                
                 
                 <br><br>
                 </div>
@@ -174,15 +167,15 @@
                 </li>
                 <li class="wow fadeInUp" data-wow-delay=".1s">
                     <div>
-                        수임 1 건 당<br>
-                        <span class="num">30~40</span> 만원<br>
+                        학력/연령/경력<br>
+                        <span class="num">제한없음</span><br>
                     </div>
                     <!-- <span class="small">집·자동차 소유자는<wbr> 한도2배</span> -->
                 </li>
                 <li class="wow fadeInUp" data-wow-delay=".2s">
                     <div>
-                        본업, 노후대비<br>
-                     <u style="color:yellow">전문직 자격증</u>
+                        교육비 지원 비용<br>
+                        <span class="num">전액지원</span><br><span style="font-size:12px;">손해평가사, 농산물품질관리사</span>
                     </div>
                 </li>
             </ul>
@@ -206,7 +199,7 @@
         <div class="sec01 contents bg-light">
             <div class="inner">
                 <div class="box">
-                    <h3 style="line-height:1.4"><img src="./img/favicon.png" style="width:30px;"> 손해평가사<br><span>자격증 취득 지원</span> 혜택</h3>
+                    <h3 style="line-height:1.4"><img src="./img/favicon.png" style="width:30px;"> 국가자격증<br><span>자격증 취득 지원</span> 혜택</h3>
                     <p class="p-text" style="font-size:17px;">
                         자금 부담 없는 교육 지원을 위해<br><span class="blink" >합격자 분들에게 교육비 전액 환급해드립니다 (신청자 한정)</span><br>
                   
@@ -226,16 +219,15 @@
         <div class="sec02 contents">
             <ul class="inner">
                 <li class="wow fadeInUp">
-                    <div class="title">손해평가사</div>
+                    <div class="title">여러분의 꿈을 이룰 수 있도록 도와드리고 있습니다.</div>
                     <div class="txt">
-                        - 농업재해로 인한 농작물의 피해 조사로 보험 지급을 위한 손해액을 평가하는 일을 수행<br><br>
-                        - 전문직 대우 및 <span style="bottom:0;">정년 없이 근무 가능</span><br><br>
-                        - 농림축산식품부 주관 국가 공인 자격증<br><br>
+                        - 취준생들에게는 대기업, 공기업 입사에 도움되는 스펙을 얻는 기회<br><br>
+                        - 일이 필요한 분들에게는 자격증 취득과 취업 연계를 제공</span><br><br>
+                        - 노후를 대비하는 분들에게는 정년 걱정 없이 수익을 창출할 수 있도록<br><br>
                     </div>
                 </li>
-                <li class="wow fadeInUp">
+                <!-- <li class="wow fadeInUp">
                     <div class="title">손해평가사 장점</div>
-                    <img src="./img/shp.png" style="width:100%;margin-bottom:10px;" >
                     <div class="txt">
                         - 전문적이고 독립적으로 움직이기 때문에 근무 환경이 자유로움<br><br>
                         - 급격한 기후 변화로 수요가 높아질 수밖에 없음<br><br>
@@ -244,12 +236,12 @@
                         - 일을 하는 만큼 수익을 높게 가져갈 수 있음<br><br>
                         - 육체 노동이 적고 정년이 없어 노후 대비에 좋음<br><br>
                     </div>
-                </li>
+                </li> -->
                 <li class="wow fadeInUp" data-wow-delay=".1s">
-                    <div class="title">지원대상 및 신청방법</div>
+                    <div class="title">지원대상 및 신청방법</div><br>
                     <div class="txt">
                         <span style="bottom:0px;">지원대상: </span> 24세 ~ 55세 성인 누구나<br><br>
-                        <span style="bottom:0px;">신청방법: </span> 하단 신청란에 신청 가능<br><br>
+                        <span style="bottom:0px;">신청방법: </span> 상단 메뉴에서 원하시는 자격증 선택 후 신청<br><br>
                         <span class="blink" style="bottom:0px;">2개 이상 신청시, 자격증마다 따로 신청해주세요<br><br>
                     </div>
                 </li>
@@ -259,9 +251,10 @@
                         교육 예산 소진시까지
                     </div>
                 </li>
+    
             </ul>
         </div>
-        <div class="sec03 contents bg-light">
+        <!-- <div class="sec03 contents bg-light">
             <div class="inner">
                 <div class="row">
                     <div class="col-md-4 col-12 wow fadeInLeft">
@@ -276,14 +269,14 @@
                     </div>
                     <div class="col-md-8 col-12 wow fadeInRight">
                         <p>
-                            연봉 <span>1억 가능</span><br>
-                            월 수익<br><span class="counter">1,000</span><span>만원 이상 가능</span>
+                            프리랜서 1건당 <span>30~40만원</span><br>
+                            정규직<br><span class="counter">3,000</span><span>만원 이상</span>
                            
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="sec04 contents" id="sec05">
             <div class="inner">
                 <div class="row">
@@ -347,17 +340,14 @@
             </div>
         </div> -->
 
-      
-          
 
 
 
 
-        
-        <div id="form"></div>
+        <!-- <div id="form"></div> -->
+
     </div><!-- contentsWrap end -->
 
-   
 
 
 
@@ -433,7 +423,7 @@
     </div>
     <div class="bottom">
         <footer>
-            한국교육개발센터 | 마케팅 업체: 플로스 | 대표자 : 최지웅 | 사업자번호: 471-09-01112 | 주소: 서울 영등포구 선유로 53길 22 502호<br>
+            한국교육개발센터 | 마케팅 업체: 플로스 | 사업자번호: 471-09-01112 | 주소: 서울 영등포구 선유로 53길 22 502호<br>
             FLOS (C) All rights reserved
         </footer>
     </div>
@@ -514,11 +504,12 @@
                 3.대검찰청 인터넷범죄수사센터 (02-3480-3600)<br>
                 4.경찰청 사이버테러대응센터 (https://www.ctrc.go.kr/02-392-0330)<br />
                 <br />
+
             </div>
         </div>
     </div>
     <!--footer 끝-->
-
+   
     <script src="./js/menu.js" ></script>
     <script src="./js/form.js"></script>
      <!-- Script File -->
@@ -529,12 +520,13 @@
      <script src="js/personal.js"></script>
     <script src="js/main.js" charset="euc-kr"></script>
     <script src="./js/count.js" ></script>
+    
     <!-- animation script -->
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.simplyscroll.min.js"></script>
-
+ 
     <script>
         function chk_num(obj){obj.value=obj.value.replace(/[^0-9]/g,'');}
 
@@ -558,15 +550,7 @@
             $('.counter').counterUp({delay: 10, time: 1000});
         });
     </script>
-
-
-    <script>
-    $('[name="entry.302176945"]').val("손해평가사");
-    $('#form1').attr("name","fm");
-    $('#select_lic').css({"display":"none"});
-    // alert($('#form1').attr("name"));
-    </script>
-    
+   
 
 </body>
 </html>
