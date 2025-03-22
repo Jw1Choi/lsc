@@ -48,7 +48,7 @@ lm.innerHTML = `
             <a class="intro-link" href="http://dbdbdeep.com/ma/link.php?lncd=S00276594PC05778332X">더 알아보기 ></a>
           </div>
     </a>
-</div> -->
+</div> 
 
 <div class="intro-blank wow fadeInLeft ads">
      
@@ -63,7 +63,7 @@ lm.innerHTML = `
             <a class="intro-link" href="https://special-event.site/bpo-event.html">더 알아보기 ></a>
           </div>
     </a>
-</div>
+</div> -->
 
 <!-- <div class="intro-blank wow fadeInLeft ads">
      
@@ -95,6 +95,22 @@ lm.innerHTML = `
     </a>
 </div> -->
 
+
+<div class="intro-blank wow fadeInLeft" >
+    <div class="ad-label">AD</div> 
+    <a href="http://dbdbdeep.com/ma/link.php?lncd=S00277684FC05822730B">
+        <div class="box-img"><img src="./img/ajd.png" class="br50" style="object-position: top;"></div>
+        <div class="box-copy">
+            <br><span class="intro_head" style="color:#f2ff8c;">인터넷,정수기,휴대폰 바꿔야할 때?
+            </span><br>
+            <a href="http://dbdbdeep.com/ma/link.php?lncd=S00277684FC05822730B"><span class="intro_tag">최대 128만원 현금지원!<br>오늘만 비밀지원금 추가!</span></a><br><br>
+            <span style="color:#e5e5e5;font-size:17px;">아정당 오늘의 이벤트!</span><br><br><br>
+          
+            </a> <br>
+            <a class="intro-link" href="http://dbdbdeep.com/ma/link.php?lncd=S00277684FC05822730B">바로 혜택받기 ></a>
+          </div>
+    </a>
+</div>
 
 
 <div class="intro-blank wow fadeInLeft" style="width:100%;">
@@ -161,7 +177,7 @@ lm.innerHTML = `
 </a>
 </div>
 
-<div class="intro-blank wow fadeInLeft ad">
+<!-- <div class="intro-blank wow fadeInLeft ad">
      
     <a href="http://dbdbdeep.com/ma/link.php?lncd=S00276860FC05779542N">
         <div class="box-img"><img src="./img/kids.png" class="br40" style="object-position: top;"></div>
@@ -206,7 +222,7 @@ lm.innerHTML = `
     </a>
 </div>
 
-<!-- <div class="intro-blank wow fadeInLeft ad">
+<div class="intro-blank wow fadeInLeft ad">
      
     <a href="https://special-event.site/bpo-event.html">
         <div class="box-img"><img src="./img/onlyone.jpg" class="br50" style="object-position: top;"></div>
