@@ -164,68 +164,80 @@ form.innerHTML = `
 <div style="display:none;">
 <form accept-charset="euc-kr"  checkform action="https://marketclub.cafe24.com/pr_test2.php" method="post" name="" onsubmit="document.charset='euc-kr';" target="hidden_iframe12" id="form1">
 <input type="hidden" name="partner_id" value="flosmarketing">
-<INPUT type=hidden name=item_no value="444">
-<input type=hidden name="refe" value="/form_make/form.php?type=set&pt=flosmarketing&it=444&rgb1=%2329292A&rgb2=&rgb3=&rgb4=&rgb5=%23433BEF&rgb6=&btn_name=%C7%FD%C5%C3+%C1%F6%BF%F8+%BD%C5%C3%BB%C7%CF%B1%E2&tracking_gubun=fasebook&tracking_code=1648614855905924&tracking_label=">
-<input type="hidden" name="sub_url" id="url" value="https://marketclub.cafe24.com/form_make/form.php?type=set&pt=flosmarketing&it=444&rgb1=%2329292A&rgb2=&rgb3=&rgb4=&rgb5=%23433BEF&rgb6=&btn_name=%C7%FD%C5%C3+%C1%F6%BF%F8+%BD%C5%C3%BB%C7%CF%B1%E2&tracking_gubun=fasebook&tracking_code=1648614855905924&tracking_label=">
+<INPUT type=hidden name=item_no value="740">
+<input type=hidden name="refe" value="/insert_form0.php?it=740&pt=flosmarketing">
+<input type="hidden" name="sub_url" id="url" value="http://marketclub.cafe24.com/insert_form0.php?it=740&pt=flosmarketing">
 <input type=hidden name="refer_url" value="">
 <input type="hidden" name="user_agent" id="user_agent" value="">
-<input type='hidden' name='facebook_fixel' value='1648614855905924'>
 
-              <div class="detfm2" style="padding:20px;">
-
-					<div class="fmfrm">
-						<div><input type="text" placeholder="이름" name="user_name" required/></div>
-						<div style="margin-top: 10px;"><input type="text" placeholder="나이" name="나이" inputmode="numeric" required maxlength=2 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/></div>
-						<div style="margin-top: 10px; display: flex">
-							<div style="width: 30%;margin: 0px;padding: 0px">
-    							<select name='휴대폰번호1' required style="height:40px;">
-    								<option value='010' >010</option>
-    								<option value='011' >011</option>
-    								<option value='016' >016</option>
-    								<option value='017' >017</option>
-    								<option value='018' >018</option>
-    								<option value='019' >019</option>
-    							</select>
-							</div>
-							<div style="width: 5%;display: inline-block;text-align: center;font-size: 10px;padding:0px;margin: 0px;padding-top: 12px;">-</div>
-							<div style="width: 30%;margin: 0px;padding: 0px">
-								<input type="text"  name="휴대폰번호2" required maxlength="4" style="height:40px" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-							</div>
-							<div style="width: 5%;display: inline-block;text-align: center;font-size: 10px;padding:0px;margin: 0px;padding-top: 12px;">-</div>
-							<div style="width: 30%;margin: 0px;padding: 0px">
-								<input type="text"  name="휴대폰번호3" required maxlength="4" style="height:40px;" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-							</div>
-							
-							
-
-						</div>
-						<div style="margin-top: 10px;">
-								<select name='상담가능시간' required style="height:40px;width: 99.6%">
-									<option value="">통화가능시간 선택</option>
-									<option value="언제나 통화 가능">언제나 통화 가능</option>
-									<option value="오전 09:00~10:00">오전 09:00 ~ 10:00</option>
-									<option value="오전 10:00~11:00">오전 10:00 ~ 11:00</option>
-									<option value="오전 11:00~12:00">오전 11:00 ~ 12:00</option>
-									<option value="점심 12:00~01:00">점심 12:00 ~ 01:00</option>
-									<option value="오후 01:00~02:00">오후 01:00 ~ 02:00</option>
-									<option value="오후 02:00~03:00">오후 02:00 ~ 03:00</option>
-									<option value="오후 03:00~04:00">오후 03:00 ~ 04:00</option>
-									<option value="오후 04:00~05:00">오후 04:00 ~ 05:00</option>
-									<option value="오후 05:00~06:00">오후 05:00 ~ 06:00</option>
-									<option value="오후 06:00~07:00">오후 06:00 ~ 07:00</option>
-								</select>
-						</div>
-						<div style="margin-top: 10px;"><input type="text" placeholder="문의사항" name="문의사항" required/>
-						</div>
-						<div class="" style="margin-top: 10px;">
-							<input type="checkbox" type="checkbox" name="all_chk"checked required/> 개인정보취급방침에 동의합니다.
-						</div>
-						<div style="width:100%;margin:0 auto;margin-top: 10px;">
-                        <input type="submit" value="혜택 지원 신청하기" class="btn_submit" id="btn_submit_id"/></div>
-						
-					</div>
+             	<div class="cms-item-row">
+				<div class="cms-width-48pro">
+					<input type="text" name="user_name" maxlength="5" required="required" placeholder="이름" class="cms-input-text cms-input-color0">
 				</div>
-				<div class="c"></div>
+				<div class="cms-width-4pro">&nbsp;</div>
+				<div class="cms-width-48pro">
+					<input type="text" name="나이" maxlength="2" required="required" placeholder="나이" class="cms-input-text cms-input-color0">
+				</div>
+				<div class="cms-clear-both"></div>
+		  </div>
+
+			<div class="cms-item-row cms-margin-top-10">
+				<div class="cms-width-30pro">
+          <select name="휴대폰번호1" required="required" placeholder="연락처" class="cms-input-text cms-input-color0">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select>
+        </div>
+				<div class="cms-width-5pro">-</div>
+				<div class="cms-width-30pro">
+					<input type="tel" name="휴대폰번호2" maxlength="4" required="required" placeholder="연락처" class="cms-input-text cms-input-color0">
+				</div>
+				<div class="cms-width-5pro">-</div>
+				<div class="cms-width-30pro">
+					<input type="tel" name="휴대폰번호3" maxlength="4" required="required" placeholder="연락처" class="cms-input-text cms-input-color0">
+				</div>
+				<div class="cms-clear-both"></div>
+		  </div>
+
+			<div class="cms-item-row cms-margin-top-10">
+        <select name="통화가능시간" required="required" class="cms-input-text cms-input-color0">
+          <option value="">통화가능시간 선택</option>
+          <option value="언제나 통화 가능">언제나 통화 가능</option>
+          <option value="오전 09:00~10:00">오전 09:00 ~ 10:00</option>
+          <option value="오전 10:00~11:00">오전 10:00 ~ 11:00</option>
+          <option value="오전 11:00~12:00">오전 11:00 ~ 12:00</option>
+          <option value="점심 12:00~01:00">점심 12:00 ~ 01:00</option>
+          <option value="오후 01:00~02:00">오후 01:00 ~ 02:00</option>
+          <option value="오후 02:00~03:00">오후 02:00 ~ 03:00</option>
+          <option value="오후 03:00~04:00">오후 03:00 ~ 04:00</option>
+          <option value="오후 04:00~05:00">오후 04:00 ~ 05:00</option>
+          <option value="오후 05:00~06:00">오후 05:00 ~ 06:00</option>
+          <option value="오후 06:00~07:00">오후 06:00 ~ 07:00</option>
+        </select>
+			</div>
+	
+			<div class="cms-item-row cms-margin-top-10">
+				<input type="text" name="문의사항" maxlength="100" placeholder="문의사항" class="cms-input-text cms-input-color0" required/>
+			</div>
+
+	
+      <div class="cms-item-row cms-margin-top-10">
+        <ul>
+          <li class="cms-radio-li cms-radio-color0">
+            <input type="checkbox" required="required" id="" checked><label for=""> 개인정보 수집·이용 동의</label>
+            <a href="/01.html" target="_blank" class="Color-Box">[보기]</a>
+          </li>
+        </ul>
+				<div class="cms-clear-both"></div>
+      </div>
+
+      <div class="cms-button cms-btn-color0 cms-margin-top-10">
+							<button ><span ><b>무료상담신청하기</b></span></button>
+			</div>
 	
 
     
@@ -551,90 +563,6 @@ form.innerHTML = `
                                       <input type=hidden name="refer_url" value="">
                                   
                                     </form>
-
-
-
-
-                                    <form accept-charset="euc-kr"  checkform action="https://marketclub.cafe24.com/pr_test2.php" method="post" name="" onsubmit="document.charset='euc-kr';" target="hidden_iframe12" id="form6">
-<input type="hidden" name="partner_id" value="flosmarketing">
-<INPUT type=hidden name=item_no value="740">
-<input type=hidden name="refe" value="/insert_form0.php?it=740&pt=flosmarketing">
-<input type="hidden" name="sub_url" id="url" value="http://marketclub.cafe24.com/insert_form0.php?it=740&pt=flosmarketing">
-<input type=hidden name="refer_url" value="">
-<input type="hidden" name="user_agent" id="user_agent" value="">
-
-             	<div class="cms-item-row">
-				<div class="cms-width-48pro">
-					<input type="text" name="user_name" maxlength="5" required="required" placeholder="이름" class="cms-input-text cms-input-color0">
-				</div>
-				<div class="cms-width-4pro">&nbsp;</div>
-				<div class="cms-width-48pro">
-					<input type="text" name="나이" maxlength="2" required="required" placeholder="나이" class="cms-input-text cms-input-color0">
-				</div>
-				<div class="cms-clear-both"></div>
-		  </div>
-
-			<div class="cms-item-row cms-margin-top-10">
-				<div class="cms-width-30pro">
-          <select name="휴대폰번호1" required="required" placeholder="연락처" class="cms-input-text cms-input-color0">
-            <option value="010">010</option>
-            <option value="011">011</option>
-            <option value="016">016</option>
-            <option value="017">017</option>
-            <option value="018">018</option>
-            <option value="019">019</option>
-          </select>
-        </div>
-				<div class="cms-width-5pro">-</div>
-				<div class="cms-width-30pro">
-					<input type="tel" name="휴대폰번호2" maxlength="4" required="required" placeholder="연락처" class="cms-input-text cms-input-color0">
-				</div>
-				<div class="cms-width-5pro">-</div>
-				<div class="cms-width-30pro">
-					<input type="tel" name="휴대폰번호3" maxlength="4" required="required" placeholder="연락처" class="cms-input-text cms-input-color0">
-				</div>
-				<div class="cms-clear-both"></div>
-		  </div>
-
-			<div class="cms-item-row cms-margin-top-10">
-        <select name="통화가능시간" required="required" class="cms-input-text cms-input-color0">
-          <option value="">통화가능시간 선택</option>
-          <option value="언제나 통화 가능">언제나 통화 가능</option>
-          <option value="오전 09:00~10:00">오전 09:00 ~ 10:00</option>
-          <option value="오전 10:00~11:00">오전 10:00 ~ 11:00</option>
-          <option value="오전 11:00~12:00">오전 11:00 ~ 12:00</option>
-          <option value="점심 12:00~01:00">점심 12:00 ~ 01:00</option>
-          <option value="오후 01:00~02:00">오후 01:00 ~ 02:00</option>
-          <option value="오후 02:00~03:00">오후 02:00 ~ 03:00</option>
-          <option value="오후 03:00~04:00">오후 03:00 ~ 04:00</option>
-          <option value="오후 04:00~05:00">오후 04:00 ~ 05:00</option>
-          <option value="오후 05:00~06:00">오후 05:00 ~ 06:00</option>
-          <option value="오후 06:00~07:00">오후 06:00 ~ 07:00</option>
-        </select>
-			</div>
-	
-			<div class="cms-item-row cms-margin-top-10">
-				<input type="text" name="문의사항" maxlength="100" placeholder="문의사항" class="cms-input-text cms-input-color0" required/>
-			</div>
-
-	
-      <div class="cms-item-row cms-margin-top-10">
-        <ul>
-          <li class="cms-radio-li cms-radio-color0">
-            <input type="checkbox" required="required" id="" checked><label for=""> 개인정보 수집·이용 동의</label>
-            <a href="/01.html" target="_blank" class="Color-Box">[보기]</a>
-          </li>
-        </ul>
-				<div class="cms-clear-both"></div>
-      </div>
-
-      <div class="cms-button cms-btn-color0 cms-margin-top-10">
-							<button ><span ><b>무료상담신청하기</b></span></button>
-			</div>
-	
-
-    
-        </form>
                             </div>
 
 `;

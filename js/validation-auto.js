@@ -76,9 +76,6 @@ $(document).ready(function () {
       $('#send_message').attr({ disabled: 'true', value: '전송 중입니다' });
       $('#send_message').css({ transition: '1s', background: '#222222', color: '#fff' });
 
-      // ★ 수정 1) 제출 직전 나이 기준 폼 라우팅 재확정 (손해평가사 30세 이상 → form6)
-      lic_pick();
-
       // 1) form_check1 실행 → 히든폼 값 동기화
       form_check1();
 
@@ -92,9 +89,7 @@ $(document).ready(function () {
 
   $('#name,#phone,#position,#id-number,#message,#agree11,#license').bind('keyup click change', form_check);
   $('#name,#phone,#position,#id-number,#message,#license').bind('keyup click change', form_check1);
-
-  // ★ 수정 2) 나이(#id-number) 변경 시에도 lic_pick 실행되도록 바인딩 추가
-  $('#license,#id-number').bind('keyup click change', lic_pick);
+  $('#license').bind('keyup click change', lic_pick);
 });
 
 // ================================================================
@@ -276,27 +271,12 @@ function form_check() {
 }
 
 // ================================================================
-//  자격증 선택 → 히든폼 name="fm" 매핑
-//  ★ 수정 3) 손해평가사: 29세 이하 → form1 / 30세 이상 → form6 분기
+//  자격증 선택 → 히든폼 name="fm" 매핑 (기존 로직 그대로)
 // ================================================================
 function lic_pick() {
   var lic = $('#license').val();
-  var age = parseInt($('#id-number').val(), 10);
 
-  // 손해평가사: 20~29세는 form1, 30~55세는 form6로 접수
-  if (lic === '손해평가사') {
-    if (age >= 30) {
-      $('#form1').attr('name', '');
-      $('#form6').attr('name', 'fm');
-    } else {
-      $('#form1').attr('name', 'fm');
-      $('#form6').attr('name', '');
-    }
-  } else {
-    $('#form1').attr('name', '');
-    $('#form6').attr('name', '');
-  }
-
+  if (lic === '손해평가사') { $('#form1').attr('name', 'fm'); } else { $('#form1').attr('name', ''); }
   if (lic === '도로교통사고감정사') { $('#form2').attr('name', 'fm'); } else { $('#form2').attr('name', ''); }
   if (lic === '농산물품질관리사') { $('#form3').attr('name', 'fm'); } else { $('#form3').attr('name', ''); }
   if (lic === '반려견스타일리스트') { $('#form4').attr('name', 'fm'); } else { $('#form4').attr('name', ''); }
