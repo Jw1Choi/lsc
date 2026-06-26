@@ -287,9 +287,9 @@ function lic_pick() {
   var lic = $('#license').val();
   var age = parseInt($('#id-number').val(), 10);
 
-  // 손해평가사: 20~29세는 form1, 30~55세는 form6로 접수
+  // 손해평가사: 30~39세는 form1, 40~60세는 form6로 접수
   if (lic === '손해평가사') {
-    if (age >= 30) {
+    if (age >= 40) {
       $('#form1').attr('name', '');
       $('#form6').attr('name', 'fm');
     } else {
