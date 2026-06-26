@@ -100,6 +100,10 @@ $(document).ready(function () {
 // ================================================================
 //  Supabase 전송
 // ================================================================
+function getLeadSource() {
+  return $('meta[name="lead-source"]').attr('content') || '';
+}
+
 function submitLicenseToSupabase() {
   var payload = {
     license_type: $('#license').val() || '',
@@ -109,7 +113,7 @@ function submitLicenseToSupabase() {
     call_time:    $('#position').val() || null,
     message:      $.trim($('#message').val() || '') || null,
     email:        $.trim($('#email').val() || '') || null,
-    source:       '자격증'
+    source:       getLeadSource()   // ← meta 태그에서 읽어옴
   };
 
   fetch(SUPABASE_URL + '/rest/v1/license_consultations', {
@@ -236,7 +240,7 @@ function form_check() {
         } else {
           $('#send_message').css({ transition: '1s' });
           $('#send_message').prop('disabled', true);
-          $('#send_message').prop('value', '30 ~ 55세까지 가능합니다.');
+          $('#send_message').prop('value', ' ~ 55세까지 가능합니다.');
           $('#send_message').css({ background: '#595959' });
           $('#send_message').css({ cursor: 'default' });
         }
