@@ -240,7 +240,7 @@ function form_check() {
         } else {
           $('#send_message').css({ transition: '1s' });
           $('#send_message').prop('disabled', true);
-          $('#send_message').prop('value', ' ~ 55세까지 가능합니다.');
+          $('#send_message').prop('value', '30 ~ 55세까지 가능합니다.');
           $('#send_message').css({ background: '#595959' });
           $('#send_message').css({ cursor: 'default' });
         }
